@@ -71,6 +71,7 @@ class Atm:
         self.menu()
     def withdraw(self):
         i = 0
+        flag=0
         while i < 5:
             if self.pin != '':
                 new_user_input = input("Enter your Current pin:")
@@ -84,11 +85,16 @@ class Atm:
                             break
                         else:
                             print("not enough money available to withdraw!")
+                            flag=1
+                            break
+
                 else:
                     print("Entered wrong pin!")
                     i += 1
             else:
                 print("create a pin first!")
+                break
+            if flag==1:
                 break
         if i == 5:
             print("Enter wrong pin 5 times!comeback later!")
@@ -116,8 +122,7 @@ class Atm:
             if self.pin != '':
                 user_input = input("Enter your Current pin:")
                 if user_input == self.pin:
-                    new_user_input = input("correct pin!\n"
-                                           "Enter new pin:")
+                    new_user_input = input("Enter new pin:")
                     if new_user_input != '':
                         self.pin = new_user_input
                         print(f"successfully changed pin!\n"
