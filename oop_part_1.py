@@ -21,3 +21,6 @@ wagonr=Car()
 '''
 #for inbuilt classes of python we use object literal which means easy method to create object
 #for example for list class, we make object as L=[] instead of the traditional way(L=list())
+#functions vs methods:
+#methods are functions written inside a class
+
