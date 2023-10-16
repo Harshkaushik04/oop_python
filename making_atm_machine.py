@@ -1,3 +1,4 @@
+#(self) explained in 3rd one
 #functions vs methods:
 #methods are functions written inside a class
 '''
