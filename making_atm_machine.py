@@ -59,6 +59,7 @@ class Atm:
                     self.balance += user_input
                     print(f"successfully deposited {user_input} rupees\n"
                           f"Current balance:{self.balance}")
+                    break
                 else:
                     print("Entered wrong pin!")
                 i += 1
@@ -80,6 +81,7 @@ class Atm:
                             self.balance -= user_input
                             print(f"successfully withdrew {user_input} rupees\n"
                                   f"Current balance:{self.balance}")
+                            break
                         else:
                             print("not enough money available to withdraw!")
                 else:
@@ -98,9 +100,10 @@ class Atm:
                 new_user_input = input("Enter your Current pin:")
                 if new_user_input == self.pin:
                     print(f"Current balance:{self.balance}")
+                    break
                 else:
                     print("Entered wrong pin!")
-                i += 1
+                    i += 1
             else:
                 print("create a pin first!")
                 break
