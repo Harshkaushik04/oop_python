@@ -3,7 +3,7 @@
 #class is a blueprint
 #only list can access functions defined in class list
 #class always consists of only 2 things:1.data[property] 2.functions[behaviour]
-'''
+'''#very basic idea
 class Car:
     color="blue" #data
     model="sports" #data
